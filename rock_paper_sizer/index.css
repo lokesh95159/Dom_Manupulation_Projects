@@ -1,0 +1,68 @@
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+body{
+    background: #000;
+}
+.button-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 8rem;
+}
+button{
+    height: 20px;
+}
+.images{
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 150px;
+    border-radius: 50%;
+}
+.result{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.count-area{
+    height: 3rem;
+    width: 15rem;
+}
+.text-area{
+    height: 25px;
+    width: 15rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    transition: transform 0.3s ease;
+}
+.image img:hover {
+    transform: scale(1.5);
+}
+.reset{
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background: white;
+    border-radius: 5px;
+}
