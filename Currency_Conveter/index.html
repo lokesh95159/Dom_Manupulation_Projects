@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <form action="">
+        <div class="amount">
+          <p>Enter amount</p>
+          <input
+            class="amt-input"
+            type="number"
+            name="amount"
+            min="0"
+            max="1000000000000000"
+            step="1"
+            placeholder="Enter the amount"
+            value="1"
+          />
+        </div>
+        <div class="dropdown">
+          <div class="form">
+            <div class="select-container">
+              <p>From</p>
+              <img
+                src="https://flagsapi.com/US/flat/64.png"
+                alt="Country flag"
+                class="img1"
+              />
+              <select name="from" class="a">
+              </select>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+              <div class="select-container">
+                <p>To</p>
+                <img
+                  src="https://flagsapi.com/IN/flat/64.png"
+                  alt="Country flag"
+                  class="img2"
+                />
+                <select name="to"class="a">
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="msg"><p>1 USD = 80 INR</p></div>
+          <button type="submit">Get Exchange Rate</button>
+        </div>
+      </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

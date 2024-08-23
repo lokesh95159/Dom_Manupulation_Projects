@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e087e2 0%, #57eae0 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,
+p {
+    text-align: center;
+    color: #333333;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 11vh;
+    margin: 5rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(66, 36, 36, 0.5);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.containerho {
+    box-shadow: 0 8px 16px rgba(66, 36, 36, 0.7);
+    animation: rotate-container-diagonal 1s forwards;
+}
+@keyframes rotate-container-diagonal {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(3600deg) rotateY(3600deg);
+    }
+}
+input,
+select,
+button {
+    width: 100%;
+    border: 1px solid #b0bec5;
+    border-radius: 4px;
+    background-color: #e0f2f1;
+    padding: 0.5rem;
+    font-size: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+input:focus,
+select:focus,
+button:hover {
+    background-color: #aed581;
+    border-color: #81c784;
+    outline: none;
+}
+input {
+    width: 98.5%;
+    height: 2.5rem;
+    padding-left: 10px;
+    background-color: none;
+}
+input:hover {
+    border-color: #81c784;
+    background-color: #f1f8e9;
+}
+select:hover {
+    border-color: #81c784;
+    background-color: #f1f8e9;
+}
+button {
+    background-color: #4db6ac;
+    color: #ffffff;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #00897b;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.select-container img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(66, 36, 36, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.select-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
